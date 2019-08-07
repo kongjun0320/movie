@@ -1,7 +1,7 @@
 <template>
   <div class="nowPlaying">
     <section class="container">
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -20,7 +20,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -39,7 +39,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -58,7 +58,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -77,7 +77,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -96,7 +96,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -115,7 +115,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -134,7 +134,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -153,7 +153,7 @@
           </section>
         </section>
       </section>
-      <section class="item clearFix">
+      <section class="item">
         <section class="avator">
           <img
             src="https://p0.meituan.net/128.180/movie/f75fcb7696d55452e32794b2219700b9840805.jpg"
@@ -176,8 +176,12 @@
   </div>
 </template>
 <script>
+import BScroll from "better-scroll";
 export default {
-  name: "NowPlaying"
+  name: "NowPlaying",
+  mounted() {
+    let bScroll = new BScroll(".nowPlaying");
+  }
 };
 </script>
 <style lang="scss" scoped>
